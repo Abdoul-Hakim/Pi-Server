@@ -1,24 +1,40 @@
-@import './src/headstyle'
+@import './src/styles/mainstyle'
+@import './src/styles/headstyle'
     
 html, body 
     margin: 0
     padding: 0
-
-body 
     height: 100vh
     width: 100vw
+
+body 
     display: grid
     grid-template-columns: 100vw
-    grid-template-rows: 20vh 80vh 10vh
+    grid-template-rows: 10vh 90vh 0vh
 
 header
+    display: flex
+    justify-content: center
+    align-items: center
     grid-row: 1
     grid-column: 1
 
 main
+    background-color: #136F63
+    font-family: Verdana, monospace, sans-serif
+    display: grid
+    grid-template-rows: 5% 2% 88% 5%
+    grid-template-columns: 3% 46% 1fr 46% 3%
     grid-row: 2
     grid-column: 1
 
 footer
     grid-row: 3
     grid-column: 1
+
+.mp-0 
+    margin: 0
+    padding: 0
+
+.p-0
+    margin: 0

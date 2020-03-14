@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,OAAO,CAAC,mEAAI;AAEZ,AAAA,UAAU,CAAC;EACP,WAAW,EAAE,6BAA6B;EAC1C,KAAK,EAAE,KAAK;EACZ,SAAS,EAAE,IAAI;EACf,qCAAqC;CAAE;;AAE3C,AAAA,OAAO,CAAC;EACJ,UAAU,EAAE,iCAAiC;EAC7C,UAAU,EAAE,sBAAsB;CAAG",
+    "sources": [
+        "headstyle.sass"
+    ],
+    "names": [],
+    "file": "headstyle.css"
+}

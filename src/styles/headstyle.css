@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css?family=Lobster&display=swap");
+.headtitle {
+  font-family: 'Lobster', 'Calibri', cursive;
+  color: white;
+  font-size: 80px;
+  /*text-shadow: -2px 4px 4px #262d2a*/
+}
+
+#header {
+  background: -webkit-gradient(linear, left top, left bottom, from(#4CE0D2), to(#22AAA1));
+  background: linear-gradient(#4CE0D2, #22AAA1);
+  -webkit-box-shadow: 2px -5px 13px 4px grey;
+          box-shadow: 2px -5px 13px 4px grey;
+}
+/*# sourceMappingURL=headstyle.css.map */
