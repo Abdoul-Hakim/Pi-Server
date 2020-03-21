@@ -1,0 +1,53 @@
+.specs
+    display: grid
+    width: 100%
+    height: 100%
+    grid-template-columns: 5% 40% 10% 40% 5%
+    grid-template-rows: 5% 10% 35% 5% 40% 5%
+    grid-row: 3
+    grid-column: 2
+
+.datatitle
+    color: #087E8B
+
+.specs .coltitle
+    grid-row: 2
+    grid-column-start: 2
+    grid-column-end: 5
+
+.cpu-data
+    grid-row: 3
+    grid-column: 2
+
+.ram-data
+    grid-row: 3
+    grid-column: 4
+
+.storage-data
+    grid-row: 4
+    grid-column: 2
+
+.heat-data
+    grid-row: 4
+    grid-column: 4
+
+@media screen and ( max-width:  450px)
+    .specs
+        grid-template-columns: 5% auto 5%
+        grid-template-rows: 5% 10% 20% 1% 20% 1% 20% 1% 20% 2%
+
+    .cpu-data
+        grid-row: 3
+        grid-column: 2
+
+    .ram-data
+        grid-row: 5
+        grid-column: 2
+
+    .storage-data
+        grid-row: 7
+        grid-column: 2
+
+    .heat-data
+        grid-row: 9
+        grid-column: 2

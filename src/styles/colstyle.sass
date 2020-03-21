@@ -1,0 +1,54 @@
+@import specstyle
+@import gpiostyles
+
+.col
+    background-color: #9DEEE6
+    box-shadow: 1px 2px 11px -3px black
+    border-radius: 5px
+
+.coltitle
+    color: #18314F
+
+.identifications
+    grid-row: 1
+    grid-column-start: 1
+    grid-column-end: 6
+    background-color: #DEF9F6
+    display: flex
+    align-items: center
+
+.id-list 
+    width: 100%
+    display: flex
+    justify-content: space-between
+    
+.id-list li
+    display: inline-block
+    display: flex
+    align-content: space-between
+
+@media screen and ( max-width:  450px)
+    .id-list 
+        font-size: 15px
+        padding-left: 10px !important
+        padding-right: 10px !important
+
+    .identifications
+        position: sticky
+        top: 0
+
+    .coltitle 
+        font-size: 20px
+    
+    .col
+        height: 100%
+
+
+
+
+    
+
+    
+
+
+

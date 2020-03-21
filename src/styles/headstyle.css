@@ -1,15 +1,64 @@
 @import url("https://fonts.googleapis.com/css?family=Lobster&display=swap");
-.headtitle {
-  font-family: 'Lobster', 'Calibri', cursive;
-  color: white;
-  font-size: 80px;
-  /*text-shadow: -2px 4px 4px #262d2a*/
-}
-
 #header {
   background: -webkit-gradient(linear, left top, left bottom, from(#4CE0D2), to(#22AAA1));
   background: linear-gradient(#4CE0D2, #22AAA1);
   -webkit-box-shadow: 2px -5px 13px 4px grey;
           box-shadow: 2px -5px 13px 4px grey;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 60% 20%;
+      grid-template-columns: 20% 60% 20%;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+}
+
+.headtitle {
+  font-family: 'Lobster', 'Calibri', cursive;
+  color: white;
+  font-size: 80px;
+  /*text-shadow: -2px 4px 4px #262d2a*/
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 2;
+  grid-column: 2;
+  text-align: center;
+}
+
+.menubtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 1;
+  grid-column: 1;
+}
+
+#menuimg {
+  margin-left: 10px;
+  max-width: 30px;
+  max-height: 30px;
+  -webkit-transition-duration: 200ms;
+          transition-duration: 200ms;
+}
+
+#raspberrylogo {
+  width: 50px;
+  height: 50px;
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+}
+
+@media screen and (max-width: 450px) {
+  .headtitle {
+    font-size: 45px;
+    position: -webkit-sticky;
+    position: sticky;
+  }
 }
 /*# sourceMappingURL=headstyle.css.map */

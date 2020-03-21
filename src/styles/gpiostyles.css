@@ -1,0 +1,104 @@
+.gpiospecs {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row: 3;
+  grid-row: 3;
+  -ms-grid-column: 4;
+  grid-column: 4;
+}
+
+.gpiospecs .coltitle {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
+.gpiospecs {
+  -ms-grid-rows: 5% 5% 3%  auto;
+      grid-template-rows: 5% 5% 3%  auto;
+  -ms-grid-columns: 3% 94% 3%;
+      grid-template-columns: 3% 94% 3%;
+  min-height: 700px !important;
+  margin-bottom: 20px;
+}
+
+.gpiobody {
+  -ms-grid-row: 4;
+  grid-row: 4;
+  -ms-grid-column: 2;
+  grid-column: 2;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -ms-grid-rows: 10% 80%;
+      grid-template-rows: 10% 80%;
+}
+
+.gpiorefbtn {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+.gpiocontainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-columns: auto 15% 30% 4% 30% 15% auto;
+      grid-template-columns: auto 15% 30% 4% 30% 15% auto;
+  -ms-grid-rows: (1fr)[10];
+      grid-template-rows: repeat(10, 1fr);
+}
+
+.gpiotext {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+.gpio {
+  -ms-grid-column: 3;
+  grid-column: 3;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  height: 80%;
+  width: 40%;
+  border-radius: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: solid 3px gray;
+}
+
+.gpio-on {
+  background: -webkit-gradient(linear, left top, left bottom, from(#99F7AB), to(#0AFF84));
+  background: linear-gradient(#99F7AB, #0AFF84);
+}
+
+.gpio-fail {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FB7D82), to(#F9343B));
+  background: linear-gradient(#FB7D82, #F9343B);
+}
+
+.gpio-off {
+  background-color: #c7c7c7;
+  -webkit-box-shadow: 0px 0px 10px -4px inset black;
+          box-shadow: 0px 0px 10px -4px inset black;
+}
+
+@media screen and (max-width: 1024px) {
+  .gpiospecs {
+    -ms-grid-row: 5;
+    grid-row: 5;
+    -ms-grid-column: 2;
+    grid-column: 2;
+  }
+}
+/*# sourceMappingURL=gpiostyles.css.map */

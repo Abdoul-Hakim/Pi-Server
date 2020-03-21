@@ -5,36 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pi Server</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./src/Images/raspberry-icon.png" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 </head>
 <body>
     <header id="header">
-        <h1 class="headtitle">Pi Server</h1>
+        <button class="btn menubtn">
+            <img id="menuimg" src="./src/Images/menu.svg" />
+        </button>
+        <h1 class="headtitle mp-0">Pi Server</h1>
+        <img id="raspberrylogo" src="./src/Images/raspberry.svg" alt=" ">
     </header>
     <main>
         <div class="identifications">
             <ul class="id-list mp-0 ">
-                <li class="username">User:<span>banana</span></li>
-                <li class="device-name">primo-pi</li>
-                <li class="device-ip">0.0.0.0</li>
+                <li class="username p-0">User:<span>banana</span></li>
+                <li class="device-name p-0">primo-pi</li>
+                <li class="device-ip p-0">0.0.0.0</li>
             </ul>
         </div>
         <div class="col specs">
+            <h1 class="coltitle mp-0"><span id="devicename">Device's</span> specifications</h1>
             <div class="data cpu-data">
-                <h3>CPU</h3>
+                <h3 class="datatitle">CPU</h3>
             </div>
             <div class="data ram-data">
-                <h3>RAM</h3>
+                <h3 class="datatitle">RAM</h3>
             </div>
             <div class="data storage-data">
-                <h3>Storage</h3>
+                <h3 class="datatitle">Storage</h3>
             </div>
             <div class="dataspec heat-data">
-                <h3>Heat</h3>
+                <h3 class="datatitle">Heat</h3>
             </div>
         </div>
-        <div class="col gpiospecs"></div>
+        <div class="col gpiospecs">
+            <h1 class="coltitle mp-0">GPIO specifications</h1>
+            <div class="gpiobody">
+                <div class="gpiorefbtn">
+                    <button class="btn gpiorefbtn"><h4>GPIO numbering</h4></button>
+                    <button class="btn gpiorefbtn"><h4>Phyisical</h4></button>
+                    <button class="btn gpiorefbtn"><h4>WiringPi</h4></button>
+                </div>
+                <div class="gpiocontainer">
+
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
     </footer>
+    <script src="./src/styles/scriptforstyles.js"></script>
 </body>
 </html>
