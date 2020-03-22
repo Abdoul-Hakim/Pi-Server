@@ -1,14 +1,17 @@
 @import './src/styles/colstyle'
 @import './src/styles/headstyle'
+@import './src/loader/loader'
+@import './src/styles/aside'
     
 html, body 
     margin: 0
     padding: 0
     height: 100%
     width: 100vw
-    background-color: #136F63
+    
 
 body 
+    font-family: Verdana, monospace, sans-serif
     display: grid
     grid-template-columns: 100vw
     grid-template-rows: 10% 90%
@@ -26,7 +29,6 @@ header
     grid-column: 1
 
 main
-    font-family: Verdana, monospace, sans-serif
     display: grid
     grid-template-rows: 5% 2% 88% 5%
     grid-template-columns: 3% 46% 1fr 46% 3%
@@ -41,11 +43,24 @@ footer
     margin: 0
     padding: 0
 
+a
+    border-style: none
+    color: white
+    text-decoration: none
+
+a:visited
+    border-style: none
+    text-decoration: none
+
+a:active
+    border-style: none
+    text-decoration: none
+
 .p-0
     margin: 0
 
 .pr-0
-    padding-right: 
+    padding-right: 0
 
 @media screen and ( max-width:  1024px)
     main
@@ -54,7 +69,7 @@ footer
 
 @media screen and ( max-width:  450px)
     main
-        grid-template-rows: 5% 1% 42% 5% 42% 1%
+        grid-template-rows: 3% 1% 42% 5% 42% 1%
 
     body
         grid-template-columns: auto

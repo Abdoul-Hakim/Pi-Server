@@ -1,3 +1,4 @@
+
 .gpiospecs
     display: grid
     grid-row: 3
@@ -8,29 +9,35 @@
     grid-column: 2
 
 .gpiospecs
-    grid-template-rows: 5% 5% 3%  auto 
+    grid-template-rows: 2% 3% 0%  auto 
     grid-template-columns: 3% 94% 3%
-    min-height: 700px !important
+    min-height: 1300px  !important
     margin-bottom: 20px
-
 
 .gpiobody
     grid-row: 4
     grid-column: 2
     display: grid
     grid-template-columns: 100%
-    grid-template-rows: 10% 80%
+    grid-template-rows: 5% auto
+    margin-bottom: 20px 
 
-.gpiorefbtn
-    grid-column: 1
-    grid-row: 1
 
 .gpiocontainer
     display: grid
+    padding-top: 5px
     grid-column: 1
     grid-row: 2
-    grid-template-columns: auto 15% 30% 4% 30% 15% auto
-    grid-template-rows: repeat( 10, 1fr)
+    grid-template-columns: auto 20% 26% 2% 26% 20% auto
+    grid-template-rows: repeat(20, 1fr)
+    border-left: solid 2px #87FFF3  !important
+    border-right: solid 2px #87FFF3 !important
+    border-bottom: solid 2px #87FFF3 !important
+    border-bottom-left-radius: 15px
+    border-bottom-right-radius: 15px
+    background-color:#7CE8DE
+    box-shadow: 0px 12px 17px -6px #136F63
+
 
 .gpiotext
     grid-column: 1
@@ -39,11 +46,13 @@
 .gpio
     grid-column: 3
     grid-row: 1
-    height: 80%
-    width: 40%
-    border-radius: 80%
+    height: 40px
+    width: 40px
+    border-radius: 40px
     display: flex
+    justify-content: center
     border: solid 3px gray
+    margin-top: 5% !important
 
 .gpio-on
     background: linear-gradient( #99F7AB, #0AFF84)
@@ -55,9 +64,53 @@
     background-color: #c7c7c7
     box-shadow: 0px 0px 10px -4px inset black
 
+.gpiorefbtn
+    grid-column: 1
+    grid-row: 1
+    display: grid
+    grid-template-columns: repeat(25%, 4)
+    grid-template-rows: 100%
 
+.refbtn 
+    grid-row: 1
+    grid-column: 1
+    width: 100%
+    height: 100%
+    border: solid 2px #87FFF3 !important
+    border-bottom: none !important
+    border-top-left-radius: 15px
+    border-top-right-radius: 15px
+
+.refbtn-off
+    background-color: #437F79 !important
+
+.refbtn-on
+    background-color:#7CE8DE !important
+    color: #0b5f5b
+    box-shadow: 0px -3px 10px -3px #136F63
+
+
+.physicalbtn
+    grid-row: 1 
+    grid-column: 1 !important
+
+.bcmbtn 
+    grid-row: 1 
+    grid-column: 2 !important
+    
+.wiringpibtn 
+    grid-row: 1 
+    grid-column: 3 !important
 
 @media screen and ( max-width:  1024px)
     .gpiospecs
         grid-row: 5
         grid-column: 2
+
+
+@media screen and ( max-width:  350px)
+    .gpio
+        height: 35px
+        width: 35px
+        border-radius: 30px
+        margin-top: 9% !important

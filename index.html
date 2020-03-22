@@ -6,55 +6,84 @@
     <title>Pi Server</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./src/Images/raspberry-icon.png" type="image/x-icon">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.1.0/anime.min.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+  crossorigin="anonymous"></script>
+    <script data-main="main.js" src="lib/require.js"></script>
 </head>
 <body>
-    <header id="header">
-        <button class="btn menubtn">
-            <img id="menuimg" src="./src/Images/menu.svg" />
-        </button>
-        <h1 class="headtitle mp-0">Pi Server</h1>
-        <img id="raspberrylogo" src="./src/Images/raspberry.svg" alt=" ">
-    </header>
-    <main>
-        <div class="identifications">
-            <ul class="id-list mp-0 ">
-                <li class="username p-0">User:<span>banana</span></li>
-                <li class="device-name p-0">primo-pi</li>
-                <li class="device-ip p-0">0.0.0.0</li>
+    <template>
+        <header id="header" class="mp-0 collapse">
+            <button class="btn menubtn">
+                <img id="menuimg" src="./src/Images/menu.svg" />
+            </button>
+            <h1 class="headtitle mp-0">Pi Server</h1>
+            <img id="raspberrylogo" src="./src/Images/raspberry.svg" alt=" ">
+        </header>
+
+        <div id="aside" class="collapse">
+            <ul class="aside-list mp-0">
+                <li class="aside-list-item">
+                    <span class="item-img-box"><img class="item-img item-account" src="./src/Images/person.svg" alt="account" /></span><a class="item-link account" href="./src/pages/account/acoount.html">Account</a>
+                </li>
+                <li class="aside-list-item">
+                    <span class="item-img-box"><img class="item-img item-snapshot"  src="./src/Images/mappe.svg" alt="mappe" /></span><a class="item-link" href="./src/pages/snapshots/snapshoots.html">Snapshots</a>
+                </li>
+                <li class="aside-list-item">
+                    <span class="item-img-box"><img class="item-img item-project"  src="./src/Images/rakete.svg" alt="project" /></span><a class="item-link" href="./src/pages/projects/projects.html">Projects</a>
+                </li>
+                <li class="aside-list-item">
+                    <span class="item-img-box"><img class="item-img item-debug" src="./src/Images/debuggen.svg" alt="debuggen" /></span><a class="item-link" href="./src/pages/debug/debug.html">Debug</a>
+                </li>
             </ul>
         </div>
-        <div class="col specs">
-            <h1 class="coltitle mp-0"><span id="devicename">Device's</span> specifications</h1>
-            <div class="data cpu-data">
-                <h3 class="datatitle">CPU</h3>
-            </div>
-            <div class="data ram-data">
-                <h3 class="datatitle">RAM</h3>
-            </div>
-            <div class="data storage-data">
-                <h3 class="datatitle">Storage</h3>
-            </div>
-            <div class="dataspec heat-data">
-                <h3 class="datatitle">Heat</h3>
-            </div>
-        </div>
-        <div class="col gpiospecs">
-            <h1 class="coltitle mp-0">GPIO specifications</h1>
-            <div class="gpiobody">
-                <div class="gpiorefbtn">
-                    <button class="btn gpiorefbtn"><h4>GPIO numbering</h4></button>
-                    <button class="btn gpiorefbtn"><h4>Phyisical</h4></button>
-                    <button class="btn gpiorefbtn"><h4>WiringPi</h4></button>
-                </div>
-                <div class="gpiocontainer">
 
+        <main id="main" class="mp-0 collapse">
+            <div class="identifications">
+                <ul class="id-list mp-0 ">
+                    <li class="username p-0">User:<span>banana</span></li>
+                    <li class="device-name p-0">primo-pi</li>
+                    <li class="device-ip p-0">0</li>
+                </ul>
+            </div>
+            <div class="col specs">
+                <h1 class="coltitle mp-0"><span id="devicename">Device's</span> specifications</h1>
+                <div class="data cpu-data">
+                    <h3 class="datatitle">CPU</h3>
+                    <button><a href="./src/snapshoots.html">snapshoot</a></button>
+                </div>
+                <div class="data ram-data">
+                    <h3 class="datatitle">RAM</h3>
+                </div>
+                <div class="data storage-data">
+                    <h3 class="datatitle">Storage</h3>
+                </div>
+                <div class="dataspec heat-data">
+                    <h3 class="datatitle">Heat</h3>
                 </div>
             </div>
+            <div class="col gpiospecs">
+                <h1 class="coltitle mp-0">GPIO specifications</h1>
+                <div class="gpiobody">
+                    <div class="gpiorefbtn">
+                        <button class="btn refbtn refbtn-on physicalbtn"><h3>Phyisical</h3></button>
+                        <button class="btn refbtn refbtn-off bcmbtn"><h3>BCM </h3></button>
+                        <button class="btn refbtn refbtn-off wiringpibtn"><h3>WiringPi</h3></button>
+                    </div>
+                    <div class="gpiocontainer"></div>
+                </div>
+            </div>
+        </main>
+    </template>
+
+    <div class="loadercontainer">
+        <div class="loaderimgcontainer">
+            <img id="loaderimg "src="./src/Images/raspberry.svg" alt="raspberry image">
         </div>
-    </main>
-    <footer>
-    </footer>
-    <script src="./src/styles/scriptforstyles.js"></script>
+        <div id="loader"></div>
+    </div>
+    
 </body>
 </html>

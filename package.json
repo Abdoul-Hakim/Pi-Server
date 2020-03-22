@@ -1,0 +1,25 @@
+{
+  "name": "pi-server",
+  "version": "1.0.0",
+  "description": "Application which displays all important specifications of a raspberry pi server",
+  "main": "main.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abdoul-Hakim/Pi-Server.git"
+  },
+  "author": "Abdoul Hakim Billa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Abdoul-Hakim/Pi-Server/issues"
+  },
+  "homepage": "https://github.com/Abdoul-Hakim/Pi-Server#readme",
+  "dependencies": {
+    "animejs": "^3.1.0"
+  }
+}
