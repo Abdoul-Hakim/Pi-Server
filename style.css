@@ -14,8 +14,21 @@
   grid-column: 2;
 }
 
+.data {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 20% 60%;
+      grid-template-columns: 20% 20% 60%;
+  -ms-grid-rows: 25% 75%;
+      grid-template-rows: 25% 75%;
+}
+
 .datatitle {
   color: #087E8B;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 1;
+  grid-column: 1;
 }
 
 .specs .coltitle {
@@ -561,6 +574,39 @@
 
 .itemlink:active {
   color: #7CE8DE;
+}
+
+.storage-chart {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 3;
+  grid-column: 3;
+}
+
+.spec-data {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 3;
+  grid-column: 3;
+}
+
+#storage-piechart {
+  width: 100%;
+  height: 100%;
+}
+
+.arc text {
+  font: 10px sans-serif;
+  text-anchor: middle;
+}
+
+.arc path {
+  stroke: #fff;
+}
+
+.title {
+  fill: teal;
+  font-weight: bold;
 }
 
 html, body {

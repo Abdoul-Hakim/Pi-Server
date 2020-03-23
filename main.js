@@ -4,10 +4,16 @@
     });
     
     setTimeout(()=>{
-        requirejs(["src/styles/scriptforstyles"],function (loader) { 
+        requirejs(["src/styles/scriptforstyles"],function (styles) { 
             runstyle()
         })
+        requirejs(["src/scripts/charts"], function(){
+            createCharts()
+            loadhardCodedData()
+        })
     },3000)
+
+    
 })()
 
 
