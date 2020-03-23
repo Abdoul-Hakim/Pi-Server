@@ -26,6 +26,18 @@
   text-align: center;
 }
 
+.headtitle a:active {
+  background-color: none;
+}
+
+.headtitle a::-moz-selection {
+  background: none;
+}
+
+.headtitle a::selection {
+  background: none;
+}
+
 .menubtn {
   display: -webkit-box;
   display: -ms-flexbox;

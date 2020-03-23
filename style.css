@@ -356,6 +356,18 @@
   text-align: center;
 }
 
+.headtitle a:active {
+  background-color: none;
+}
+
+.headtitle a::-moz-selection {
+  background: none;
+}
+
+.headtitle a::selection {
+  background: none;
+}
+
 .menubtn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -490,8 +502,8 @@
   grid-column: 1;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 5vh 15vh 15vh 15vh 15vh;
-      grid-template-rows: 5vh 15vh 15vh 15vh 15vh;
+  -ms-grid-rows: 5vh 15vh 15vh 15vh 15vh 15vh;
+      grid-template-rows: 5vh 15vh 15vh 15vh 15vh 15vh;
   -ms-grid-columns: 10% 80% 10%;
       grid-template-columns: 10% 80% 10%;
   margin: 0;
