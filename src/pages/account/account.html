@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pi Server</title>
     <link rel="stylesheet" href="../../../style.css">
-    <link rel="shortcut icon" href="../../src/Images/raspberry-icon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../../Images/raspberry-icon.png" type="image/x-icon">
 </head>
 <body>
     <header id="header" class="mp-0">
@@ -16,6 +16,49 @@
         </h1>
         <img id="raspberrylogo" src="../../Images/raspberry.svg" alt=" ">
     </header>
-    <h1>Account</h1>
+    <main id="mainpage">
+        <h1 class="pagetitle mp-0">Account</h1>
+        <div class="userdata-container">
+            <form class="userdata-form" method="post">
+                <h2 class="formtitle mp-0">personal data</h2>
+                <label id="personal-id"><b>ID <span>#99999</span></b></label>
+                <label for="username">username:</label>
+                <div class="input-container">
+                    <div class="m-input"> 
+                        <input type="text" name="username" id="username" class="userdata mp-0"/>
+                        <button type="button" class="btn mod-btn mp-0">
+                            <img class="img-mod-btn mp-0" alt="bearbeiten" />
+                        </button>
+                    </div>
+                </div>
+                <label for="useremail">email:</label>
+                <div class="input-container">
+                    <div class="m-input">    
+                        <input type="email" name="username" id="useremail" class="userdata mp-0"/>
+                        <button type="button" class="btn mod-btn mp-0">
+                            <img class="img-mod-btn mp-0" alt="bearbeiten" />
+                        </button>
+                    </div>
+                </div>
+                <label for="userpassword">password:</label>
+                <div class="input-container">
+                    <div class="m-input"> 
+                        <input type="password" name="userpassword" id="userpassword" class="userdata mp-0"/>
+                        <button type="button" class="btn mod-btn mp-0">
+                            <img class="img-mod-btn mp-0" alt="bearbeiten" />
+                        </button>
+                    </div>
+                </div>
+                <div class="notification-container">
+                    <p class="mp-0 notification"></p>
+                </div>
+                <div class="input-controllers">
+                    <button type="button" class="input-btn mp-0">Cancel</button>
+                    <button type="button" class="input-btn mp-0">Save</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script data-main="account.js" src="../../../lib/require.js"></script>
 </body>
 </html>

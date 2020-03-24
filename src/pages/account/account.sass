@@ -1,0 +1,147 @@
+$electric-blue: #7CE8DE
+$photo-blue: #A5D8ED
+$turquise: #4CE0D2
+$light-sea-green: #22AAA1
+$deep-green-cyan: #68A39B
+$rich-black: #041B15
+$raspberry-blue: #000a64
+
+#mainpage
+    display: grid
+    grid-template-columns: 3% 94% 3%
+    grid-template-rows: 5% 10% 80% 5%
+
+.pagetitle
+   color: #18314F
+   grid-column: 2
+   grid-row: 2
+
+.userdata-container
+    grid-column: 2
+    grid-row: 3
+    display: grid
+    grid-template-columns: 100%
+    grid-template-rows: 60%
+
+.img-mod-btn
+    max-width: 20px
+    max-height: 20px
+    border: none
+
+.userdata-form
+    grid-column: 1
+    grid-row: 1
+    display: grid
+    grid-template-columns: 2% 30% auto 2%
+    grid-template-rows: repeat(50px, 7)
+
+.formtitle
+    color: #087E8B
+    grid-column-start: 2
+    grid-column-end: 4
+    grid-row: 1
+
+label
+    font-size: 18px
+
+#personal-id
+    grid-column: 3
+    grid-row: 2  
+    display: flex
+    justify-self: flex-end
+    align-self: self-start
+    color: #000a64
+
+label[for=username]
+    grid-column: 2
+    grid-row: 3
+
+label[for=useremail]
+    grid-column: 2
+    grid-row: 4
+
+label[for=userpassword]
+    grid-column: 2
+    grid-row: 5
+
+label[for=username] + .input-container
+    grid-column: 3
+    grid-row: 3
+
+label[for=useremail] + .input-container
+    grid-column: 3
+    grid-row: 4
+
+label[for=userpassword] + .input-container
+    grid-column: 3
+    grid-row: 5
+
+.m-input
+    max-height: 25px
+    display: flex
+    justify-items: self-start
+    align-items: self-start
+
+.m-input input
+    height: inherit
+    width: 80% 
+    font-size: 18px
+    border: solid 1px $electric-blue
+    border-top-left-radius: 10px
+    border-bottom-left-radius: 10px
+    padding-left: 8px
+    outline: none
+
+.mod-btn
+    width: 50px
+    max-height: 100%
+    background-color: $raspberry-blue !important
+    border-top-right-radius: 10px
+    border-bottom-right-radius: 10px
+    transition-duration: 150ms
+    border: solid 2px $electric-blue !important
+
+.mod-btn:active
+    transition-duration: 150ms
+    background-color: $photo-blue !important
+
+.normal-input
+    background-color: $raspberry-blue
+    color: $turquise
+    transition-duration: 150ms
+
+.changing-input
+    background-color: $turquise
+    color: $raspberry-blue
+    transition-duration: 150ms
+
+.input-controllers
+    grid-column-start: 2
+    grid-column-end: 4
+    grid-row: 7
+    display: flex
+    justify-content: space-evenly
+
+.input-btn
+    background-color: $raspberry-blue !important
+    color: $electric-blue
+    width: 100px
+    height: 40px
+    font-size: 20px
+    border: solid 2px $electric-blue
+    border-radius: 20px
+    outline: none
+
+.input-btn:active
+    transition-duration: 150ms
+    background-color: $turquise !important
+    color: $raspberry-blue !important
+    
+
+.notification-container
+    grid-column-start: 2
+    grid-column-end: 4
+    grid-row: 6
+    
+
+
