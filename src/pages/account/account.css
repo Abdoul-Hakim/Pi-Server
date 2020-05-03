@@ -8,7 +8,6 @@
 }
 
 .pagetitle {
-  color: #18314F;
   -ms-grid-column: 2;
   grid-column: 2;
   -ms-grid-row: 2;
@@ -184,21 +183,34 @@ label[for=userpassword] + .input-container {
 }
 
 .input-btn {
-  background-color: #000a64 !important;
-  color: #7CE8DE;
   width: 100px;
   height: 40px;
   font-size: 20px;
-  border: solid 2px #7CE8DE;
   border-radius: 20px;
   outline: none;
 }
 
 .input-btn:active {
-  -webkit-transition-duration: 150ms;
-          transition-duration: 150ms;
+  -webkit-transition-duration: 50ms;
+          transition-duration: 50ms;
   background-color: #4CE0D2 !important;
   color: #000a64 !important;
+}
+
+.enable-btn {
+  background-color: #000a64 !important;
+  color: #7CE8DE;
+  border: solid 2px #7CE8DE;
+  -webkit-transition-duration: 200ms;
+          transition-duration: 200ms;
+}
+
+.disable-btn {
+  -webkit-transition-duration: 200ms;
+          transition-duration: 200ms;
+  background-color: #A3ACA9;
+  color: #041B15;
+  border: solid 2px #A3ACA9 !important;
 }
 
 .notification-container {
@@ -207,5 +219,10 @@ label[for=userpassword] + .input-container {
   grid-column-end: 4;
   -ms-grid-row: 6;
   grid-row: 6;
+}
+
+#notification {
+  color: #136F63;
+  font-size: 15px;
 }
 /*# sourceMappingURL=account.css.map */

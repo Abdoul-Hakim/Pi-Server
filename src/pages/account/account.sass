@@ -5,6 +5,8 @@ $light-sea-green: #22AAA1
 $deep-green-cyan: #68A39B
 $rich-black: #041B15
 $raspberry-blue: #000a64
+$disable-backgroundColor: #A3ACA9
+
 
 #mainpage
     display: grid
@@ -12,7 +14,6 @@ $raspberry-blue: #000a64
     grid-template-rows: 5% 10% 80% 5%
 
 .pagetitle
-   color: #18314F
    grid-column: 2
    grid-row: 2
 
@@ -123,25 +124,37 @@ label[for=userpassword] + .input-container
     justify-content: space-evenly
 
 .input-btn
-    background-color: $raspberry-blue !important
-    color: $electric-blue
     width: 100px
     height: 40px
     font-size: 20px
-    border: solid 2px $electric-blue
     border-radius: 20px
     outline: none
 
 .input-btn:active
-    transition-duration: 150ms
+    transition-duration: 50ms
     background-color: $turquise !important
     color: $raspberry-blue !important
-    
+
+.enable-btn
+    background-color: $raspberry-blue !important
+    color: $electric-blue
+    border: solid 2px $electric-blue
+    transition-duration: 200ms
+
+.disable-btn
+    transition-duration: 200ms
+    background-color: $disable-backgroundColor 
+    color: $rich-black
+    border: solid 2px $disable-backgroundColor !important
 
 .notification-container
     grid-column-start: 2
     grid-column-end: 4
     grid-row: 6
+
+#notification
+    color: #136F63
+    font-size: 15px
     
 
 

@@ -1,1 +1,14 @@
-/* No CSS *//*# sourceMappingURL=debug.css.map */
+@media screen and (max-width: 450px) {
+  .pages-body {
+    -ms-grid-columns: 100vw;
+        grid-template-columns: 100vw;
+    grid-row: 10% 90%;
+  }
+  #header {
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+}
+/*# sourceMappingURL=debug.css.map */

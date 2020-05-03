@@ -4,3 +4,9 @@ function runPages() {
     body[0].classList.add("pages-body");
 }
 
+function runMenuBtn(status) {
+    requirejs(["../styles/styles"], function (scriptforstyle) {
+        rotateImgBtn(status);
+    })
+}
+

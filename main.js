@@ -4,7 +4,7 @@
     });
     
     setTimeout(()=>{
-        requirejs(["src/styles/scriptforstyles"],function (styles) { 
+        requirejs(["src/styles/styles"],function (styles) { 
             runstyle()
         })
         requirejs(["src/scripts/charts"], function(){

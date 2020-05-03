@@ -1,24 +1,9 @@
 function runstyle(){
     let menustatus = true;
     const menuimg =  document.getElementById("menuimg"); 
-    const imgbtn = document.getElementsByClassName("menubtn");
     const refbtn = document.getElementsByClassName("refbtn");
     const aside = document.getElementById("aside");
     const main = document.getElementById("main");
-    
-    imgbtn[0].addEventListener('click', () => {
-        if (menustatus == true){
-            menuimg.style.transform = 'rotate(90deg)';
-            main.classList.add("collapse");
-            aside.classList.remove("collapse");
-            menustatus = false;
-        }else{
-            menuimg.style.transform = 'rotate(0deg)';
-            main.classList.remove("collapse");
-            aside.classList.add("collapse");
-            menustatus = true;
-        }   
-    });
 
     refbtn[0].addEventListener('click', () => {
         generateGPIOs("Physical")
@@ -59,6 +44,7 @@ function runstyle(){
         refbtn[2].classList.add("refbtn-on");
     });
 
+    rotateImgBtn(menustatus);
     generateGPIOs("Physical", true);
     asidelements();
 }
@@ -71,6 +57,24 @@ function asidelements() {
         x++
     }
  }
+
+function rotateImgBtn(status) {
+    const imgbtn = document.getElementsByClassName("menubtn");
+
+    imgbtn[0].addEventListener('click', () => {
+        if (status == true){
+            menuimg.style.transform = 'rotate(90deg)';
+            main.classList.add("collapse");
+            aside.classList.remove("collapse");
+            status = false;
+        }else{
+            menuimg.style.transform = 'rotate(0deg)';
+            main.classList.remove("collapse");
+            aside.classList.add("collapse");
+            status = true;
+        }   
+    });
+}
 
 function generateGPIOs(type, firsttime) {
 

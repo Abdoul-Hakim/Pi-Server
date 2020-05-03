@@ -796,21 +796,34 @@ label[for=userpassword] + .input-container {
 }
 
 .input-btn {
-  background-color: #000a64 !important;
-  color: #7CE8DE;
   width: 100px;
   height: 40px;
   font-size: 20px;
-  border: solid 2px #7CE8DE;
   border-radius: 20px;
   outline: none;
 }
 
 .input-btn:active {
-  -webkit-transition-duration: 150ms;
-          transition-duration: 150ms;
+  -webkit-transition-duration: 50ms;
+          transition-duration: 50ms;
   background-color: #4CE0D2 !important;
   color: #000a64 !important;
+}
+
+.enable-btn {
+  background-color: #000a64 !important;
+  color: #7CE8DE;
+  border: solid 2px #7CE8DE;
+  -webkit-transition-duration: 200ms;
+          transition-duration: 200ms;
+}
+
+.disable-btn {
+  -webkit-transition-duration: 200ms;
+          transition-duration: 200ms;
+  background-color: #A3ACA9;
+  color: #041B15;
+  border: solid 2px #A3ACA9 !important;
 }
 
 .notification-container {
@@ -821,13 +834,32 @@ label[for=userpassword] + .input-container {
   grid-row: 6;
 }
 
+#notification {
+  color: #136F63;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 450px) {
+  .pages-body {
+    -ms-grid-columns: 100vw;
+        grid-template-columns: 100vw;
+    grid-row: 10% 90%;
+  }
+  #header {
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+}
+
 .pages-body {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 100vw;
-      grid-template-columns: 100vw;
-  -ms-grid-rows: 10% 90%;
-      grid-template-rows: 10% 90%;
+  -ms-grid-columns: 100vw !important;
+      grid-template-columns: 100vw !important;
+  -ms-grid-rows: 10% 90% !important;
+      grid-template-rows: 10% 90% !important;
   background-color: #CEF6F2;
 }
 
